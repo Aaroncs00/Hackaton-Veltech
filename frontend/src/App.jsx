@@ -1,6 +1,8 @@
 import Voluntarios from "./components/Voluntarios";
 import Donaciones from "./components/Donaciones";
 import Dashboard from "./components/Dashboard";
+import Calendar from "./components/Calendar";
+
 
 
 export default function App() {
@@ -12,7 +14,15 @@ export default function App() {
 
       <div className="row g-4 mt-4">
         <div className="col-12"><Voluntarios /></div>
-        {/* <div className="col-12"><Donaciones /></div> */}
+      </div>
+
+      <div className="row g-4 mt-4">
+        
+      </div>
+
+      <div className="row g-4 mt-4">
+        <div className="col-12"><Calendar /></div>
+      
       </div>
     </div>
   );
