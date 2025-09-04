@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { exportToPDF, exportToExcel } from "../utils/exportUtils";
+    import { exportToPDF, exportToExcel } from "../utils/exportUtils";
 
 import {
   PieChart, Pie, Cell, Tooltip, Legend,
@@ -36,20 +36,20 @@ export default function Dashboard() {
   return (
 
     <div className="card shadow-sm mt-4">
-      <div className="d-flex gap-2 mb-3">
-        <button
-          className="btn btn-outline-danger"
-          onClick={() => exportToPDF(voluntarios, donaciones)}
-        >
-          📄 Exportar PDF
-        </button>
-        <button
-          className="btn btn-outline-success"
-          onClick={() => exportToExcel(voluntarios, donaciones)}
-        >
-          📊 Exportar Excel
-        </button>
-      </div>
+        <div className="d-flex gap-2 mb-3">
+  <button
+    className="btn btn-outline-danger"
+    onClick={() => exportToPDF(voluntarios, donaciones)}
+  >
+    📄 Exportar PDF
+  </button>
+  <button
+    className="btn btn-outline-success"
+    onClick={() => exportToExcel(voluntarios, donaciones)}
+  >
+    📊 Exportar Excel
+  </button>
+</div>
 
       <div className="card-body">
         <h2 className="h4 mb-4">📊 Dashboard de Gestión</h2>
